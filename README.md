@@ -13,10 +13,10 @@ Things you may want to cover:
 	- Used default sqlite3 db for this task.
 
 * Database initialization
-	- run rails db:create and rails db:migrate.
+	- run "rails db:create" and "rails db:migrate"
 	- database will be setup.
 
-* Run rails s in terminal and open http://localhost:3000
+* Run "rails s" in terminal and open http://localhost:3000
 
 * For the importing of files of candidates and notes form is provided to attach the files and submit.
 
