@@ -13,6 +13,6 @@ class PagesController < ApplicationController
 			uploaded_file = params[:file][:import_notes].tempfile
     		helpers.import_notes(uploaded_file)
 		end
-		redirect_back(fallback_location: root_path)
+		redirect_to root_path, flash: {notice: "Successfully imported the data."}
 	end
 end
