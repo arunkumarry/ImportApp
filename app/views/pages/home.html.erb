@@ -1,0 +1,22 @@
+<div class="container">
+  <div>
+    <h2>Import Candidates and Notes.</h2>
+  </div>
+  <div class="pt-5">
+    <%= form_for :file, url: '/', html: {class: "form_upload"}, :multipart => true do |f| %>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Import Candidates</h5>
+          <%= f.file_field :import_candidates %>
+          <p style="font-size: 13px; color: red;">* Upload CSV file here</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Import Notes</h5>
+          <%= f.file_field :import_notes %>
+          <p style="font-size: 13px; color: red;">* Upload CSV file here</p>
+        </div>
+      </div>
+      <%= f.submit class: 'btn btn-success' %>
+    <% end %>
+  </div>
+</div>
