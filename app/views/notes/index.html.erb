@@ -2,13 +2,13 @@
 
 <table class="table table-striped table-bordered">
   <tr>
-  	<th>No.</th>
+    <th>No.</th>
     <th>Note</th>
   </tr>
   <% @notes.each_with_index do |note, i| %>
-	  <tr>
-	  	<td><%= i+1 %></td>
-	    <td><%= note.content %></td>
-	  </tr>
+    <tr>
+      <td><%= i+1 %></td>
+      <td><%= note.content %></td>
+    </tr>
   <% end %>
 </table>

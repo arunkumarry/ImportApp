@@ -2,13 +2,13 @@
 
 <table class="table table-striped table-bordered">
   <tr>
-  	<th>No.</th>
+    <th>No.</th>
     <th>Name</th>
   </tr>
   <% @jobs.each do |job| %>
-	  <tr>
-	  	<td><%= job.id %></td>
-	    <td><%= job.name.titleize %></td>
-	  </tr>
+    <tr>
+      <td><%= job.id %></td>
+      <td><%= job.name.titleize %></td>
+    </tr>
   <% end %>
 </table>

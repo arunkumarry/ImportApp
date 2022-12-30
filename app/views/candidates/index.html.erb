@@ -11,14 +11,14 @@
     <th>Additional</th>
   </tr>
   <% @candidates.each do |candidate| %>
-	  <tr>
+    <tr>
       <td><%= candidate.id %></td>
-	    <td><%= candidate.name %></td>
-	    <td><%= candidate.email %></td>
-	    <td><%= candidate.phone %></td>
-	    <td><%= candidate.job.name.titleize %></td>
+      <td><%= candidate.name %></td>
+      <td><%= candidate.email %></td>
+      <td><%= candidate.phone %></td>
+      <td><%= candidate.job.name.titleize %></td>
       <td><%= candidate.created_at %></td>
       <td><%= link_to "Notes", candidate_notes_path(candidate_id: candidate.id) %></td>
-	  </tr>
+    </tr>
   <% end %>
 </table>
